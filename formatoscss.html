@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Componentes CSS</title>
+    <link rel="stylesheet" href="css/formatocss.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="Sobre mi.html">Sobre Mi</a>
+            <a href="Clientes.html">Clientes</a>
+            <a href="Contactame.html">Contacto</a>
+        </nav>
+     </div>
+    <!-- Barra de navegación -->
+    <section id="section1">
+        <nav>
+            <a href="#section1">Inicio</a>
+            <a href="#section2">Galería</a>
+            <a href="#section3">Tarjeta</a>
+            <a href="#section4">Formulario</a>
+            <a href="#section5">Botón Animado</a>
+            <a href="#section6">Producto</a>
+            <a href="#section7">Modal</a>
+            <a href="#section8">Tabla</a>
+            <a href="#section9">Sidebar</a>
+            <a href="#section10">Footer</a>
+        </nav>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section id="section2" class="gallery">
+        <img src="img/imagen1.jpg" alt="Imagen 1">
+        <img src="img/imagen2.jpg" alt="Imagen 2">
+        <img src="img/imagen3.webp" alt="Imagen 3">
+    </section>
+
+    <!-- Tarjeta de Presentación -->
+    <section id="section3" class="card">
+        <h3>Tarjeta de Presentación</h3>
+        <p>Esta es una tarjeta de presentación con un diseño elegante.</p>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="section4" class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+    </section>
+
+    <!-- Botón Animado -->
+    <section id="section5">
+        <center><button class="button-animated">Botón Animado</button></center>
+    </section>
+
+    <!-- Tarjeta de Producto -->
+    <section id="section6" class="product-card">
+        <img src="img/producto.jpg" alt="Producto">
+        <h4>Cuadro de Jinx</h4>
+        <button>Comprar Ahora</button>
+    </section>
+
+    <!-- Modal Pop-up -->
+    <section id="section7">
+        <div class="modal">
+            <h2>Modal Pop-up</h2>
+            <p>Este es un ejemplo de un modal pop-up.</p>
+            <button onclick="document.querySelector('.modal').classList.remove('active')">Cerrar</button>
+        </div>
+        <center><button onclick="document.querySelector('.modal').classList.add('active')">Abrir Modal</button></center>
+    </section>
+
+    <!-- Tabla Estilizada -->
+    <section id="section8">
+        <table class="table-custom">
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="section9">
+        <!-- Botón para mostrar/ocultar la sidebar -->
+        <center><button id="toggleSidebar" class="button-animated">☰ Menú</button></center>
+    </section>
+
+    <!-- Sidebar -->
+    <aside id="section9" class="sidebar">
+        <h2>Sidebar</h2>
+        <nav>
+            <ul>
+                <li><a href="#section1">Inicio</a></li>
+                <li><a href="#section2">Galería</a></li>
+                <li><a href="#section3">Tarjeta</a></li>
+                <li><a href="#section4">Formulario</a></li>
+                <li><a href="#section5">Botón Animado</a></li>
+                <li><a href="#section6">Producto</a></li>
+                <li><a href="#section7">Modal</a></li>
+                <li><a href="#section8">Tabla</a></li>
+                <li><a href="#section9">Sidebar</a></li>
+                <li><a href="#section10">Footer</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('toggleSidebar').addEventListener('click', function() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+
+    // Si quieres agregar lógica para deshabilitar el scroll al mostrar la sidebar:
+
+    });
+    </script>
+
+    <!-- Pie de página -->
+    <footer id="section10" class="footer">
+        <p>&copy; 2024 Ejemplos de Componentes CSS. Todos los derechos reservados.</p>
+        <a href="#section1">Volver al inicio</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Engineer</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+ <header>
+    <h1 class="titulo">César Iván Nava Topete <span style="color: brown;">Ingeniero en Computación</span></h1>
+ </header>
+
+ <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="Sobre mi.html">Sobre Mi</a>
+        <a href="Clientes.html">Clientes</a>
+        <a href="Contactame.html">Contacto</a>
+    </nav>
+ </div>
+
+ <section class="hero">
+    <div class="contenido-hero">
+        <h2 style="color: #2C74B3;">Ingeniero en Computación - Cyberseguridad</h2>
+        <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#950101" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10z" />
+                    <path d="M7 20h10" />
+                    <path d="M9 16v4" />
+                    <path d="M15 16v4" />
+                  </svg>
+              <p style="color: #2C74B3;">Jalisco, Zapopan</p>
+        </div>
+        <a class="boton" href="#">Contactar</a>
+    </div>
+ </section>
+
+ <main class="contenedor sombra">
+    <h2>Mis Servicios</h2>
+    <div class="servicios">
+        <section class="servicio">
+            <h3><a href="java.html">Java Script</a></h3> 
+            <div class="iconos">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                <path d="M7.5 8h3v8l-2 -1" />
+                <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
+                </svg>
+            </div>
+            
+        </section>
+
+        <section class="servicio">
+            <h3><a href="formatoscss.html">Formatos CSS</a> </h3> 
+            <div class="iconos">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+                    <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+                    </svg>
+            </div>
+            
+        </section>
+
+        <section class="servicio">
+            <h3><a href="flexgrid.html">Flexbox y Grid</a></h3> 
+            <div class="iconos">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z" />
+                <path d="M4 12m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+                <path d="M14 12l6 0" />
+                <path d="M14 16l6 0" />
+                <path d="M14 20l6 0" />
+                </svg>
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <h2>Contactos</h2>
+        <form class="formulario" action="php/registrar.php" method="post">
+            <fieldset>
+                <legend>Contactanos llenando todos los campos</legend>
+                <div class="contenedor-campos">
+                    <div class="campo">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input class="input-text" type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
+                        </div>
+                    </div>
+    
+                    <div class="campo">
+                        <div>
+                            <label for="telefono">Teléfono</label>
+                            <input class="input-text" type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
+                        </div>
+                    </div>
+    
+                    <div class="campo">
+                        <div>
+                            <label for="correo">Correo</label>
+                            <input class="input-text" type="email" name="correo" id="correo" placeholder="Correo" required>
+                        </div>
+                    </div>
+    
+                    <div class="campo">
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="input-text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="alinear-derecha flex">
+                    <input class="boton w-sm-100" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+ </main>
+
+ <footer class="footer">
+    <p>Todos los derechos reservados. César Iván Nava Topete - Ingeniero en Computación - Cyberseguridad</p>
+ </footer>
+</body>
+</html>

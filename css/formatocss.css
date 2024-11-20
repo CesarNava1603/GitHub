@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A2647;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #144272;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #2C74B3;
+    border-radius: 5px;
+}
+
+/* Image Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Presentation Card */
+.card {
+    background-color: #2C74B3;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.card:hover {
+    background-color: #144272;
+}
+
+/* Contact Form */
+.form-container {
+    background-color: #0A2647;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #950101;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #2C74B3;
+    color: #ffffff;
+}
+
+.form-container button {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #950101;
+}
+
+/* Animated Button */
+.button-animated {
+    background-color: #FF0000;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.3s;
+    margin: 20px;
+}
+
+.button-animated:hover {
+    transform: translateY(-3px);
+    background-color: #950101;
+}
+
+/* Product Card */
+.product-card {
+    border: 1px solid #950101;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #144272;
+    color: #ffffff;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h4 {
+    margin: 15px 0;
+}
+
+.product-card button {
+    background-color: #FF0000;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card button:hover {
+    background-color: #950101;
+}
+
+/* Modal Popup */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2C74B3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal button {
+    background-color: #FF0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Styled Table */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #144272;
+    color: #ffffff;
+}
+
+.table-custom th, .table-custom td {
+    border: 1px solid #950101;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-custom th {
+    background-color: #2C74B3;
+}
+
+.table-custom tr:hover {
+    background-color: #0A2647;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Oculta la sidebar inicialmente */
+    width: 250px;
+    height: 100%;
+    background-color: #144272;
+    color: #ffffff;
+    padding: 20px;
+    z-index: 2000; /* Asegúrate de que esté por encima de otros elementos */
+    transition: left 0.3s ease-in-out; /* Transición para el deslizamiento */
+    overflow-y: auto; /* Permite scroll si el contenido excede la altura */
+}
+
+.sidebar.active {
+    left: 0; /* Muestra la sidebar */
+}
+
+/* Para asegurarte de que el contenido principal no quede debajo de la sidebar */
+body {
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #144272;
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
